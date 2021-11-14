@@ -9,6 +9,7 @@ import Peer, {DataConnection} from 'peerjs';
 
 const isProd = process.env.NODE_ENV === 'production';
 
+
 const peer = new Peer({
   host: isProd ? 'snake.3dstyle.net' : 'localhost',
   port: isProd ? 443 : 9000,
